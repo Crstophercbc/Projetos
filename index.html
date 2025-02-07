@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        th , td {border: 2px solid black;}
+        tfoot {background-color: cyan;}
+    </style>
+</head>
+<body>
+    
+    <table>
+
+        <thead>
+            <tr>
+                <th>Recurso</th>
+                <th>Quantidade</th>
+                <th>Preço</th>
+                <th>Black Friday</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Produto 1</td>
+                <td>8</td>
+                <td>$98</td>
+                <!-- rowspan para expandir colunas -->
+                <td rowspan="4">Sim</td>
+            <tr>
+                <td>Produto 2</td>
+                <td>9</td>
+                <td>$87</td>
+            <tr>
+                <td>Produto 3</td>
+                <td>8</td>
+                <td>$980</td>
+            <tr>
+                <td>Produto 4</td>
+                <td>8</td>
+                <td>$09</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <!-- <colspan> para expamdir linhas -->
+                <td colspan="3">Total</td>
+                <td>R$1.174,00</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+</body>
+</html>
